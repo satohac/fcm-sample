@@ -1,3 +1,6 @@
+/**
+ * This software is released under the MIT License, see LICENSE.
+ */
 const auth = firebase.auth();
 const messaging = firebase.messaging();
 const database = firebase.database();
@@ -20,7 +23,7 @@ auth.onAuthStateChanged(async (user) => {
     $("#main").removeClass("d-none");
   } else {
     uid = null;
-    $("#login").addClass("d-none");
+    $("#login").removeClass("d-none");
   }
 });
 

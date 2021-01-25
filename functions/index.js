@@ -1,3 +1,7 @@
+/**
+ * This software is released under the MIT License, see LICENSE.
+ */
+
 const admin = require("firebase-admin");
 const functions = require("firebase-functions");
 admin.initializeApp();
